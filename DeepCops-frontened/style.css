@@ -1,0 +1,94 @@
+/* Cool Gradient Background */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #4b6493, #1a6af4); /* Deep Blue Gradient */
+    color: white;
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Image Boxes */
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.image-box {
+    background: rgba(220, 45, 14, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-box:hover {
+    transform: scale(1.05);
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Loading Text */
+#loadingText {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+/* Result Text */
+#resultText {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Buttons */
+button {
+    background-color: #60d73c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #e68900;
+}
+
+/* Image Preview Container */
+#imagePreviewContainer {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    display: none;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Image Preview */
+#imagePreview {
+    display: block; /* Ensures it behaves like a block element */
+    margin: 15px auto; /* Centers it horizontally */
+    max-width: 300px;
+    height: auto;
+    border: 2px solid rgb(25, 6, 6);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
