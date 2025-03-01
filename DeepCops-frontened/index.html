@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepCops: Deepfake Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DeepCops: Deepfake Detector</h1>
+
+        <div class="image-container">
+            <div class="image-box">
+                <h2>Real</h2>
+                <img src="actual.jpg" alt="Real Image">
+            </div>
+            <div class="image-box">
+                <h2>DeepFake</h2>
+                <img src="tomcruise.jpeg" alt="Deep Fake">
+            </div>
+        </div>
+?
+        <p>Upload an image to check if it's a deepfa?ke:</p>
+        <input type="file" id="imageUpload" onchange="previewImage()"> 
+        <button onclick="scanImage()">Check</button>
+
+        <!-- Image Preview Section -->
+        <div id="imagePreviewContainer" style="display: none; margin-top: 15px;">
+            <h3>Selected Image:</h3>
+            <img id="imagePreview" src="" alt="Uploaded Image" style="max-width: 75%; border-radius: 10px;">
+        </div>
+
+        <div id="loadingText" style="display: none; margin-top: 15px;">
+            <img src="loading.gif" alt="Loading..." width="50px">
+            <p>🔄 Scanning...</p>
+        </div>
+
+        <div id="resultBox" style="display: none; margin-top: 15px;">
+            <p id="resultText"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
